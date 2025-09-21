@@ -38,11 +38,11 @@ const Header = () => {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Masuk
+            <Button variant="ghost" className="text-foreground hover:text-primary" asChild>
+              <a href="/login">Masuk</a>
             </Button>
-            <Button className="btn-primary">
-              Daftar Sekarang
+            <Button className="btn-primary" asChild>
+              <a href="/register">Daftar Sekarang</a>
             </Button>
           </div>
 
@@ -72,11 +72,11 @@ const Header = () => {
                 Kontak
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="justify-start">
-                  Masuk
+                <Button variant="ghost" className="justify-start" asChild>
+                  <a href="/login">Masuk</a>
                 </Button>
-                <Button className="btn-primary justify-start">
-                  Daftar Sekarang
+                <Button className="btn-primary justify-start" asChild>
+                  <a href="/register">Daftar Sekarang</a>
                 </Button>
               </div>
             </nav>
